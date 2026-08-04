@@ -1,0 +1,180 @@
+/* ==========================================
+   TEAM CARD
+========================================== */
+
+.team-card {
+    
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    transition: none;
+
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.team-card-header {
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.team-card-logo {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+
+    transition: transform 0.35s ease;
+}
+
+.team-card:hover .team-card-logo {
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   CARD BODY
+========================================== */
+
+.team-card-body {
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    flex: 1;
+}
+
+/* ==========================================
+   TEAM NAME
+========================================== */
+
+.team-name {
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: #1f2937;
+
+    line-height: 1.3;
+}
+
+/* ==========================================
+   TEAM BADGE
+========================================== */
+
+.team-badge {
+    width: fit-content;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: #eef3ff;
+
+    color: var(--primary);
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.team-card-actions {
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+    .team-card-header{
+
+        height:150px;
+
+    }
+
+    .team-card-logo{
+
+        width:80px;
+        height:80px;
+
+    }
+
+    .team-card-body{
+
+        padding:20px;
+
+    }
+
+    .team-name{
+
+        font-size:1.6rem;
+
+    }
+
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+}
+
+.favorite-btn svg {
+    color: crimson;
+}

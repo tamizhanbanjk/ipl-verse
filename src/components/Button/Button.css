@@ -1,0 +1,59 @@
+.btn {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+.primary {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+.primary:hover {
+
+    background: var(--secondary);
+
+     transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.secondary {
+
+    background: white;
+
+    color: var(--primary);
+
+    border: 2px solid var(--primary);
+
+}
+
+.secondary:hover {
+
+    background: var(--primary);
+
+    color: white;
+
+     transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+
+
+}
+
