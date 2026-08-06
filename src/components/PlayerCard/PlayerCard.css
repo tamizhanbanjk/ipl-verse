@@ -1,0 +1,118 @@
+
+.player-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-card:hover{
+    transform: translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.player-image{
+    position: relative;
+    height:220px;
+    background:#eef3ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.image-placeholder{
+    font-size:70px;
+}
+
+.favorite-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.favorite-btn:hover{
+    transform:scale(1.1);
+    box-shadow: 0 8px 18px rgba(0,0,0,.2);
+}
+
+.favorite-btn:active{
+    transform: scale(.95);
+}
+
+.favorite-btn svg{
+    color:crimson;
+     transition: .3s;
+}
+
+.player-card-body{
+    padding:24px;
+}
+
+.player-name{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:8px;
+}
+
+.player-team{
+    display:inline-block;
+    background:#eef3ff;
+    color:#2563eb;
+    padding:6px 14px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.player-role{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+.player-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    text-align:center;
+}
+
+.stat{
+    background:#f8fafc;
+    padding:12px;
+    border-radius:10px;
+}
+
+.stat span{
+    display:block;
+    color:#6b7280;
+    font-size:.85rem;
+}
+
+.stat strong{
+    display:block;
+    margin-top:6px;
+    font-size:1.1rem;
+}
