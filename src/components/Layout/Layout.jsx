@@ -1,13 +1,8 @@
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import { Outlet , useLocation } from "react-router-dom";
-
-import { AnimatePresence, motion } from "framer-motion";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
-
-  const location = useLocation();
-  
   return (
     <>
       <Navbar />
