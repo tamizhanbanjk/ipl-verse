@@ -1,0 +1,357 @@
+.player-details-page {
+
+    min-height: 100vh;
+
+    padding: 50px 8% 80px;
+
+    background: #f5f8fc;
+
+}
+
+
+/* Back Button */
+
+.back-btn {
+
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    padding: 10px 18px;
+
+    background: #0b1f3a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.back-btn:hover {
+
+    background: #2563eb;
+
+    transform: translateX(-4px);
+
+}
+
+
+/* Main Player Card */
+
+.player-details-card {
+
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 40px;
+
+}
+
+
+/* Player Image */
+
+.player-details-image {
+
+    min-height: 350px;
+
+    background: #eef3ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.details-placeholder {
+
+    font-size: 100px;
+
+}
+
+
+/* Player Information */
+
+.player-details-info {
+
+    padding: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+.details-team {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 7px 16px;
+
+    border-radius: 50px;
+
+    background: #eef3ff;
+
+    color: #2563eb;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.player-details-info h1 {
+
+    font-size: 2.8rem;
+
+    color: #0b1f3a;
+
+    margin-bottom: 10px;
+
+}
+
+.details-role {
+
+    font-size: 1.2rem;
+
+    color: #6b7280;
+
+    margin-bottom: 15px;
+
+}
+
+.captain-badge {
+
+    width: fit-content;
+
+    padding: 8px 15px;
+
+    background: #fff4cc;
+
+    color: #92400e;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+}
+
+
+/* Sections */
+
+.details-section {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+
+}
+
+.details-section h2 {
+
+    color: #0b1f3a;
+
+    margin-bottom: 25px;
+
+    font-size: 1.5rem;
+
+}
+
+
+/* Information Grid */
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+.detail-item {
+
+    background: #f8fafc;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+}
+
+.detail-item span {
+
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 7px;
+
+}
+
+.detail-item strong {
+
+    color: #1f2937;
+
+}
+
+
+/* Career Statistics */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+}
+
+.career-stat {
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    padding: 22px 12px;
+
+    border-radius: 12px;
+
+}
+
+.career-stat span {
+
+    display: block;
+
+    color: #6b7280;
+
+    margin-bottom: 8px;
+
+}
+
+.career-stat strong {
+
+    font-size: 1.4rem;
+
+    color: #0b1f3a;
+
+}
+
+
+/* Not Found */
+
+.player-not-found {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+}
+
+.player-not-found h1 {
+
+    color: #0b1f3a;
+
+    margin-bottom: 15px;
+
+}
+
+.player-not-found p {
+
+    color: #6b7280;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .player-details-card {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .player-details-image {
+
+        min-height: 280px;
+
+    }
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .player-details-page {
+
+        padding: 30px 5% 60px;
+
+    }
+
+    .player-details-info {
+
+        padding: 30px;
+
+    }
+
+    .player-details-info h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/Layout/Layout";
 import TeamDetails from "./pages/TeamDetails/TeamDetails";
+import Playerdetails from "./pages/Playerdetails/Playerdetails";
 
 import Home from "./pages/Home/Home";
 import Teams from "./pages/Teams/Teams";
@@ -39,8 +40,9 @@ function App() {
 
           <Route path="about" element={<About />} />
 
-          <Route path="/teams/:id" element={<TeamDetails />}
-/>
+          <Route path="/teams/:id" element={<TeamDetails />} />
+          
+          <Route path="/players/:id" element={<Playerdetails />} />
 
         </Route>
 
