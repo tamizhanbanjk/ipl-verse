@@ -1,0 +1,359 @@
+
+
+/* ========================================
+   POINTS TABLE PAGE
+======================================== */
+
+.points-page {
+    min-height: 100vh;
+    padding: 40px 6%;
+    background: #f5f7fb;
+}
+
+
+/* ========================================
+   SEARCH + SORT CONTROLS
+======================================== */
+
+.points-controls {
+    max-width: 1000px;
+    margin: 40px auto 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Search */
+
+.points-search {
+    width: 360px;
+    height: 54px;
+
+    padding: 0 20px;
+
+    border: 2px solid #2563eb;
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    font-size: 16px;
+    color: #1f2937;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+.points-search::placeholder {
+    color: #94a3b8;
+}
+
+.points-search:focus {
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Sort */
+
+.points-sort {
+    width: 240px;
+    height: 54px;
+
+    padding: 0 18px;
+
+    border: 2px solid #2563eb;
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    font-size: 16px;
+    color: #1f2937;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.points-sort:focus {
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ========================================
+   TABLE CONTAINER
+======================================== */
+
+.points-table-container {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 35px auto 50px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+.points-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+/* ========================================
+   TABLE HEADER
+======================================== */
+
+.points-table thead {
+    background: #071d3a;
+    color: #ffffff;
+}
+
+.points-table th {
+    padding: 18px 12px;
+
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ========================================
+   TABLE BODY
+======================================== */
+
+.points-table td {
+    padding: 18px 12px;
+
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #1f2937;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ========================================
+   POSITION
+======================================== */
+
+.points-table td.position {
+    color: #2563eb;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   TEAM NAME
+======================================== */
+
+.points-table td.team-name {
+    color: #111827;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   WINS
+======================================== */
+
+.points-table td.wins {
+    color: #15803d;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   LOSSES
+======================================== */
+
+.points-table td.losses {
+    color: #dc2626;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   POINTS
+======================================== */
+
+.points-table td.points {
+    color: #111827;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   NRR
+======================================== */
+
+.points-table td:nth-child(7) {
+    color: #374151;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   TABLE ROW
+======================================== */
+
+.points-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.points-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* Remove border from last row */
+
+.points-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ========================================
+   NO RESULTS
+======================================== */
+
+.no-table-results {
+    padding: 40px !important;
+
+    text-align: center;
+
+    font-size: 18px !important;
+    font-weight: 600 !important;
+
+    color: #6b7280 !important;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .points-page {
+        padding: 35px 4%;
+    }
+
+    .points-controls {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .points-search,
+    .points-sort {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .points-table-container {
+        overflow-x: auto;
+    }
+
+    .points-table {
+        min-width: 900px;
+    }
+
+    .points-table th {
+        font-size: 17px;
+    }
+
+    .points-table td {
+        font-size: 17px;
+    }
+
+    .points-table td.team-name {
+        font-size: 17px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .points-page {
+        padding: 25px 15px;
+    }
+
+    .points-controls {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .points-search,
+    .points-sort {
+        height: 50px;
+
+        font-size: 15px;
+    }
+
+    .points-table-container {
+        border-radius: 12px;
+    }
+
+    .points-table {
+        min-width: 850px;
+    }
+
+    .points-table th {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    .points-table td {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    .points-table td.team-name,
+    .points-table td.position,
+    .points-table td.wins,
+    .points-table td.losses,
+    .points-table td.points {
+        font-size: 16px;
+    }
+}
