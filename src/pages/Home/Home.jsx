@@ -1,5 +1,10 @@
-import "./Home.css";
-import Button from "../../components/Button/Button";
+
+
+ import "./Home.css";
+
+import { Link } from "react-router-dom";
+
+
 
 function Home() {
   return (
@@ -16,19 +21,24 @@ function Home() {
 
         <div className="hero-buttons">
 
-          <Button
-            
-            text = "Explore Now"
-            variant = "primary"
           
-          />   
 
-          <Button
-            
-            text = "View Teams"
-            variant = "secondary"
-          
-          />
+          <Link to="/players" className="home-btn primary">
+
+                      Explore IPL
+
+          </Link> 
+
+
+          <Link to="/teams" className="home-btn secondary">
+
+                       View Teams 
+
+          </Link>
+
+
+
+
 
         </div>
       </div>

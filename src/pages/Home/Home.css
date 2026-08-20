@@ -1,3 +1,5 @@
+
+
 .hero{
 
     max-width:1300px;
@@ -59,30 +61,35 @@
     gap:20px;
 
 }
+.hero-buttons .home-btn {
 
-.hero-buttons button{
+    display: inline-block;
 
-    padding:15px 35px;
+    padding: 15px 35px;
 
-    border:none;
+    border-radius: 10px;
 
-    border-radius:10px;
+    cursor: pointer;
 
-    cursor:pointer;
+    font-size: 18px;
 
-    font-size:18px;
+    font-weight: 600;
 
-    transition:var(--transition);
+    text-decoration: none;
 
-    background:var(--primary);
+    transition: var(--transition);
 
-    color:white;
+    background: var(--primary);
+
+    color: white;
 
 }
 
-.hero-buttons button:hover{
+.hero-buttons .home-btn:hover {
 
-    background:var(--secondary);
+    background: var(--secondary);
+
+    transform: translateY(-2px);
 
 }
 
@@ -98,4 +105,29 @@
 
     box-shadow:var(--shadow);
 
+}
+
+
+.hero-buttons .home-btn.primary {
+    background: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+}
+
+.hero-buttons .home-btn.primary:hover {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #000;
+}
+
+.hero-buttons .home-btn.secondary {
+    background: #38bdf8;
+    color: black;
+    border: 2px solid #38bdf8;
+}
+
+.hero-buttons .home-btn.secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
 }
