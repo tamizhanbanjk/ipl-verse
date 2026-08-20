@@ -1,0 +1,315 @@
+/* ========================================
+   COMPARE PAGE
+======================================== */
+
+.compare-page {
+    min-height: 100vh;
+
+    padding: 40px 7%;
+
+    background: #f4f7fb;
+}
+
+
+/* ========================================
+   PLAYER SELECTION
+======================================== */
+
+.compare-controls {
+    max-width: 850px;
+
+    margin: 45px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.player-select {
+    width: 320px;
+
+    height: 55px;
+
+    padding: 0 20px;
+
+    border: 2px solid #2563eb;
+
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-size: 16px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.player-select:focus {
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+
+.compare-vs {
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #0b1f3a;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   COMPARISON CONTAINER
+======================================== */
+
+.comparison-container {
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+/* ========================================
+   PLAYER
+======================================== */
+
+.comparison-player {
+    text-align: center;
+}
+
+
+.comparison-avatar {
+    width: 100px;
+
+    height: 100px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #eef3ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+
+.comparison-player h2 {
+    margin: 0 0 10px;
+
+    color: #1f2937;
+
+    font-size: 22px;
+}
+
+
+.comparison-team {
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 50px;
+
+    background: #eef3ff;
+
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+.comparison-player p {
+    color: #6b7280;
+
+    margin-top: 12px;
+}
+
+
+/* ========================================
+   STATISTICS
+======================================== */
+
+.comparison-stats {
+    width: 100%;
+}
+
+
+.comparison-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    padding: 16px 10px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    text-align: center;
+}
+
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+
+.comparison-row strong {
+    font-size: 18px;
+
+    color: #1f2937;
+}
+
+
+.comparison-row span {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+}
+
+
+/* ========================================
+   PLACEHOLDER
+======================================== */
+
+.compare-placeholder {
+    max-width: 700px;
+
+    margin: 60px auto;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+.compare-placeholder div {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+.compare-placeholder h2 {
+    margin-bottom: 10px;
+
+    color: #1f2937;
+}
+
+
+.compare-placeholder p {
+    color: #6b7280;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .comparison-container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .comparison-stats {
+        order: 3;
+    }
+
+    .compare-controls {
+        flex-direction: column;
+    }
+
+    .player-select {
+        width: 100%;
+
+        max-width: 400px;
+    }
+
+    .compare-vs {
+        width: 45px;
+
+        height: 45px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .compare-page {
+        padding: 30px 20px;
+    }
+
+    .comparison-container {
+        padding: 25px 15px;
+
+        border-radius: 16px;
+    }
+
+    .comparison-player h2 {
+        font-size: 20px;
+    }
+
+    .comparison-row strong {
+        font-size: 16px;
+    }
+
+}
