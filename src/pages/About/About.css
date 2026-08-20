@@ -1,0 +1,348 @@
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-page {
+    min-height: 100vh;
+
+    padding: 40px 7%;
+
+    background: #f4f7fb;
+}
+
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.about-intro {
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.about-icon {
+    width: 120px;
+
+    height: 120px;
+
+    min-width: 120px;
+
+    border-radius: 50%;
+
+    background: #eef3ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+
+.about-intro-content h2 {
+    margin: 0 0 15px;
+
+    color: #1f2937;
+
+    font-size: 28px;
+}
+
+
+.about-intro-content p {
+    margin: 0 0 12px;
+
+    color: #6b7280;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+.about-section {
+    max-width: 1100px;
+
+    margin: 55px auto;
+}
+
+
+.about-section > h2 {
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: #1f2937;
+
+    font-size: 27px;
+}
+
+
+/* ========================================
+   FEATURE CARDS
+======================================== */
+
+.about-features {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.about-feature-card {
+    background: #ffffff;
+
+    padding: 28px 22px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
+}
+
+
+.about-feature-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.feature-icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.about-feature-card h3 {
+    margin: 0 0 10px;
+
+    color: #1f2937;
+
+    font-size: 20px;
+}
+
+
+.about-feature-card p {
+    margin: 0;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   FEATURES LIST
+======================================== */
+
+.features-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.features-list div {
+    background: #ffffff;
+
+    padding: 18px 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: #2563eb;
+
+    font-size: 20px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+
+.features-list span {
+    color: #4b5563;
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   TECHNOLOGIES
+======================================== */
+
+.technology-list {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.technology-list span {
+    padding: 10px 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 30px;
+
+    color: #2563eb;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ========================================
+   PROJECT PURPOSE
+======================================== */
+
+.about-purpose {
+    max-width: 1100px;
+
+    margin: 55px auto 30px;
+
+    padding: 35px 40px;
+
+    background: #0b1f3a;
+
+    border-radius: 20px;
+
+    color: #ffffff;
+}
+
+
+.about-purpose h2 {
+    margin-top: 0;
+
+    margin-bottom: 18px;
+
+    font-size: 26px;
+}
+
+
+.about-purpose p {
+    margin-bottom: 12px;
+
+    color: #dbeafe;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .about-page {
+        padding: 30px 20px;
+    }
+
+
+    .about-intro {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 22px;
+    }
+
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-purpose {
+        padding: 30px 22px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .about-icon {
+        width: 90px;
+
+        height: 90px;
+
+        min-width: 90px;
+
+        font-size: 45px;
+    }
+
+
+    .about-intro-content h2 {
+        font-size: 24px;
+    }
+
+}
